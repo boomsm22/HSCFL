@@ -241,7 +241,7 @@ def parse_arguments():
                         help='Dataset names to process (default: gowalla yelp2018 amazon)')
 
     parser.add_argument('--method', choices=['activity', 'random'],
-                        default='activity',
+                        default='random',
                         help='Split method: activity-based or random (default: activity)')
 
     parser.add_argument('--rate', type=float, default=0.5,
@@ -293,5 +293,6 @@ if __name__ == "__main__":
                 dataset, method='random', open_rate=args.rate, seed=args.seed
             )
             method_name = f"Random split ({int(args.rate * 100)}%)"
+
 
         analyze_activity_distribution(dataset, open_users, private_users, user_activity, method_name)
