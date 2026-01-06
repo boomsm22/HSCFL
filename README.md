@@ -14,13 +14,13 @@ scipy == 1.12.0
 numpy == 1.23.5
 scikit-learn=1.6.1
 bottleneck=1.4.2
-'''
+```
 ## Run
 We use three real-world datasets: gowalla, yelp2018 and amazon.
 Firstly, divide users into two groups, i.e., open users and private users.
-'''python
+```python
 python user_divide_preprocess.py --dataset gowalla --rate 0.5
-'''
+```
 Secondly, run HSCFL. We adopt the optimal settings of the backbone models, and tune only the learning rate and framework-specific parameters. Specifically, for the SCCT stage, we tune the ranks of LoRA , the dimensions of the gate and the leaning rate. For the SMSF stage, we tune the distillation weight and the number of the sampled negative items. The best parameters for each dataset are provided in the 'HSCFL.sh' file, you can find the corresponding code to run for each dataset in this file.
 
 
