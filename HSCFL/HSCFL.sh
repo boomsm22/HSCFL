@@ -13,5 +13,5 @@ python multi-source_fusion.py --dataset yelp2018 --ratio 50
 #amazon
 python pretrain.py --dataset amazon --anneal_cap 0.6 --ratio 50
 python hybrid_finetuning.py --dataset amazon --lr 1e-2 --anneal_cap 0.6 --lora_ranks 32 8 --gate_dims 2 1 1 2 --ratio 50
-python listwise_relational_distillation.py --dataset amazon --ratio 50 --recdim 64 --layer 3 --lora_ranks 32 8 --gate_dims 2 1 1 2 --listwise_K 12 --distill_temperature 4.0 --listwise_weight 0.01
+python listwise_relational_distillation.py --dataset amazon --ratio 50 --recdim 64 --layer 3 --lora_ranks 32 8 --gate_dims 2 1 1 2 --listwise_K 8 --distill_temperature 4.0 --listwise_weight 0.01
 python multi-source_fusion.py --dataset amazon --ratio 50
