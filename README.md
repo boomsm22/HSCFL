@@ -1,7 +1,7 @@
-# HSCFL： Towards Fairness-aware and Communication-efficient Recommendation with User Privacy Heterogeneity
-This repository contains the official implementation of the paper "Fairness-aware and Communication-efficient Federated Recommendation with User Privacy Heterogeneity".
+# HSCFL: Hybrid Server-Client Federated Recommendation with User Privacy Heterogeneity
+This repository contains the official implementation of the paper "HSCFL: Hybrid Server-Client Federated Recommendation with User Privacy Heterogeneity".
 ## Overview
-HSCFL is a hybrid server-client federated learning framework designed for recommendation with user privacy heterogeneity. It addresses the challenges of communication overhead and fairness through a two-stage architecture:
+HSCFL is a hybrid server-client federated learning framework designed for recommendation with user privacy heterogeneity. It separates parameter-efficient training of a shared model from the subsequent optimization of recommendations for open users:
 
 1. Server-client collaborative training (SCCT).
 2. Server-side multi-source fusion (SMSF).
